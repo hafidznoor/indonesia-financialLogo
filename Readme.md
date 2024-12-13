@@ -37,6 +37,10 @@ document.getElementById('logo').src = logoPath;
 ```html
 <img id="logo" alt="Bank Logo" />
 ```
+## Support us to grow our logo library!
+I create this manually from the source above. Support by giving donation to grow the logo library via Trakteer link below
+
+[CLICK HERE](https://teer.id/hafidznoor)
 
 ## Directory Logo
 
@@ -244,11 +248,6 @@ This repo is curated and optimize manually by myself and I would not accept any 
 
 ## Credit
 The logo is credited to Seeklogo.com, Logopedia (logos.fandom.com), Masvian, BlogoVector, Vector69.com, and Annual Report document from its bank.
-
-## Support us to grow our logo library!
-I create this manually from the source above. Support by giving donation to grow the logo library via Trakteer link below
-
-[CLICK HERE](https://teer.id/hafidznoor)
 
 ### **Connect to me**
 [Instagram →](https://www.instagram.com/hafidznoor/)
