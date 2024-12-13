@@ -5,6 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hafidznoor/indonesia-financialLogo.git"
+  },
   "keywords": [
     "bank",
     "logo",
@@ -19,12 +23,9 @@
   "type": "commonjs",
   "files": [
     "index.js",
-    "banklogo/"
-  ]
-}
-{
-  "name": "@hafidznoor/indonesia-financialLogo",
-  "version": "1.0.0",
+    "SVG/",
+    "PNG/"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   }
