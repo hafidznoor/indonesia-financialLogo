@@ -19,8 +19,8 @@ const readbankLogo = (folderPath) => {
 };
 
 // Path ke folder PNG dan SVG
-const svgPath = path.join(__dirname, 'bank-logo', 'SVG');
-const pngPath = path.join(__dirname, 'bank-logo', 'PNG');
+const svgPath = path.join(__dirname, 'SVG');
+const pngPath = path.join(__dirname, 'PNG');
 
 // Struktur ekspor
 const bankLogo = {
