@@ -1,0 +1,24 @@
+{
+  "name": "bank-logo-library",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bank",
+    "logo",
+    "library",
+    "indonesia",
+    "npm"
+  ],
+  "author": "Hafidz Noor Fauzi",
+  "license": "CC-BY-NC-4.0",
+  "description": "A library of bank logos in Indonesia for non-commercial use, distributed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).",
+  "main": "index.js",
+  "type": "commonjs",
+  "files": [
+    "index.js",
+    "banklogo/"
+  ]
+}
