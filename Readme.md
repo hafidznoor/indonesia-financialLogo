@@ -45,8 +45,7 @@ I create this manually from the source above. Support by giving donation to grow
 ## Directory Logo
 
 <details>
-
-    <summary>List logo</summary>
+    <summary>See list of all logo</summary>
     1. Bank Logo
         - Aladin
         - Allo
