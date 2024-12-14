@@ -1,4 +1,4 @@
-# Bank Logo Library
+# Indonesia Financial Logo Library
 
 ## **THE MOST COMPLETE OF INDONESIAN FINANCIAL LOGO LIBRARY (500++ LOGO)**
 
