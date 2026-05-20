@@ -1,4 +1,4 @@
-# ⚠️ DEPRECATED — use @hafidznoor/idn-finlogos instead
+# ⚠️ DEPRECATED — use idn-finlogos instead
 
 This package (`indo-financial-logolibrary`, v1) is **no longer maintained**.
 
@@ -12,20 +12,20 @@ v1 used a runtime `fs.readdirSync` to expose logo paths. That meant:
 
 ## Use v2 instead
 
-[**@hafidznoor/idn-finlogos**](https://github.com/hafidznoor/idn-finlogos) — public npm, jsDelivr/unpkg CDN, per-logo ESM imports, TypeScript types, ~10× smaller download.
+[**idn-finlogos**](https://github.com/hafidznoor/idn-finlogos) — public npm, jsDelivr/unpkg CDN, per-logo ESM imports, TypeScript types, ~10× smaller download.
 
 ```bash
-npm install @hafidznoor/idn-finlogos
+npm install idn-finlogos
 ```
 
 ```js
-import bca from '@hafidznoor/idn-finlogos/icons/bca';
+import bca from 'idn-finlogos/icons/bca';
 ```
 
 Or via CDN, no install:
 
 ```html
-<img src="https://cdn.jsdelivr.net/npm/@hafidznoor/idn-finlogos@2/dist/icons/bca.svg">
+<img src="https://cdn.jsdelivr.net/npm/idn-finlogos@2/dist/icons/bca.svg">
 ```
 
 ## Migrating
