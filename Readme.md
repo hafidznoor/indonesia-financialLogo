@@ -1,93 +1,39 @@
-# Indonesia Financial Logo Library
+# ⚠️ DEPRECATED — use @hafidznoor/idn-finlogos instead
 
-## **THE MOST COMPLETE OF INDONESIAN FINANCIAL LOGO LIBRARY (500++ LOGO)**
+This package (`indo-financial-logolibrary`, v1) is **no longer maintained**.
 
-There are 500++ of Indonesian financial institution logo 
+## Why
 
-- Huge library for vector bank logo
-- Ready to use with 2 versions
-    - In SVG File
-    - In PNG File
-        - x1
-        - x2
-        - x3
-        - x4
-        - Large (512w)
-- Category Logo
-    - Bank Logo
-    - Bank App
-    - Remittance
-    - Switching
-    - Regulatory & Institution Logo
-    - e-Wallet
-    - ISP *(Internet Service Provider)*
-    - Mobile Telco
-    - Financing
-    - Insurance
-    - Prepaid Card
-    - Utilities
-    - Logistic
-    - Game
-    - Entertainment
-    - Government
-    - Supermarket
-    - Transportation
-    - Donation
-    - Card Payment
-    - Direct Debit
-    - Prepaid Card
-    - Payment Gateway
-    - E-Commerce
-    - Misc.
+v1 used a runtime `fs.readdirSync` to expose logo paths. That meant:
 
-## Installation
+- It couldn't be used in browser bundlers (Vite, webpack, esbuild, Rollup).
+- It was only published to GitHub Packages, not public npm — requiring `.npmrc` auth setup.
+- Filenames contained spaces (`BCA Digital.svg`) — bad for URLs and JS identifiers.
+
+## Use v2 instead
+
+[**@hafidznoor/idn-finlogos**](https://github.com/hafidznoor/idn-finlogos) — public npm, jsDelivr/unpkg CDN, per-logo ESM imports, TypeScript types, ~10× smaller download.
+
 ```bash
-npm install indo-financial-logolibrary
+npm install @hafidznoor/idn-finlogos
 ```
 
-## Usage
-Import to your project
-```javascript
-const bankLogo = require('indo-financial-logolibrary');
-
-// Access SVG logos
-console.log(bankLogo.SVG['Bank Logo']['Jenius']); // Path to Jenius.svg
-
-// Access PNG logos by scale and category
-console.log(bankLogo.PNG.x1['Bank App']['BCA Mobile']); // Path to x1/BCA Mobile.png
-console.log(bankLogo.PNG.x2['Bank Logo']['Mandiri Livin']); // Path to x2/Mandiri Livin.png
+```js
+import bca from '@hafidznoor/idn-finlogos/icons/bca';
 ```
 
-### Example in Web Project
-```javascript
-const logoPath = logos.PNG.x2['Bank App']['Jenius']; // Load 2x PNG logo for Jenius
-document.getElementById('logo').src = logoPath;
-```
+Or via CDN, no install:
 
-### HTML example
 ```html
-<img id="logo" alt="Bank Logo" />
+<img src="https://cdn.jsdelivr.net/npm/@hafidznoor/idn-finlogos@2/dist/icons/bca.svg">
 ```
 
-## Contributing
-This repo is curated and optimize manually by myself and I would not accept any pull request for this repo. If you want a specific logo, please request with links to the vector file (.svg).
+## Migrating
 
-## :purple_heart: Support us to grow our logo library! 
-I create this manually from the source above. Support by giving donation to grow the logo library via Trakteer link below
-[CLICK HERE](https://teer.id/hafidznoor)
+See [MIGRATION.md](https://github.com/hafidznoor/idn-finlogos/blob/main/MIGRATION.md) for a full v1 → v2 slug mapping table.
 
-## Credit
-The logo library is credited to 
-    - Seeklogo.com
-    - Logos.fandom.com
-    - Masvian.com
-    - Vector69.com
-    - Company documents that contains SVG/Vector file
+## License clarification
 
-### **Connect to me**
-- [Instagram →](https://www.instagram.com/hafidznoor/)
-- [Dribbble →](https://dribbble.com/hafidznoor)
-- [LinkedIn →](https://id.linkedin.com/in/hafidznoor)
+v1's `package.json` claimed `CC-BY-NC-4.0` while the `LICENSE` file was MIT — those were contradictory. v2 dual-licenses cleanly: **MIT for the code, CC-BY-NC-4.0 for the SVG assets**.
 
-### Disclaimer
-*Logos included in this repository are trademarks of their respective owners. The use of these logos is subject to the brand guidelines and permissions of the respective banks.*
+This repo is left online (archived) so any existing `npm install` commands keep working, but no further updates will land here.
